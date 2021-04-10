@@ -1,0 +1,23 @@
+table{
+    border: 1px solid black;/*borde exterior*/
+    border-collapse: collapse;/*eliminamos los espacios*/
+}
+table th{
+    border: 1px solid blue;/*borde de celda*/
+}
+table td{
+    border: 1px solid red;
+    padding: 20px;
+    text-align: center;
+}
+table tr:hover{
+    background: lightgray;
+}
+table td:hover{
+    background: lightgreen ;
+    color: white;
+}
+table th:hover{
+    background: tomato;
+    color: white;
+}

@@ -1,0 +1,45 @@
+/*a{
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px 10px;
+}*/
+/*Para poder manejar los links tenemos que usar pseudoclases*/
+/*esto es para ver como se ve antes de visitarlo*/
+/*a:link{
+   color: darkmagenta;
+}*/
+/*para ver como se comporta cuando se le pasa el mouse por encima*/
+/*a:hover{
+    text-decoration: underline;
+    background: darkolivegreen;
+    color: white;
+}*/
+/*para ver como se comporta a la hora de hacerle click*/
+/*a:active{
+    color: yellowgreen;
+    background: tomato;
+}*/
+/*Para ver como se comportan los enlaces visitados*/
+/*a:visited{
+    color: blue;
+    background: red;
+}*/
+
+/*Para convertir los links en botones*/
+a{
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px 10px;
+    display: inline-block;/*Para que un elemento en linea lo trabaje como una caja*/
+    background: lightseagreen;
+    color: white;
+    padding: 10px 20px;/*para que tenga espacio dentro de de la caja y no este pegado*/
+    box-shadow: 0px 5px 0px teal;/*manejamos la sombra abajo del boton*/
+}
+a:hover{
+    box-shadow: 0px 2px 0px teal;
+    background: rgb(32, 93, 90);
+}
+a:active{
+    box-shadow: none;
+}

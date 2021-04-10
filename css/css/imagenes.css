@@ -1,0 +1,19 @@
+/*Propiedades de imagenes*/
+div{
+    
+    width: 100%;
+}
+img{
+    width: 50%;
+    height: auto;
+    /*Para centrar la imagen horiz*/
+    margin: auto;
+    display: block;
+    /*para redondear los bordes*/
+    border-radius: 15px;
+    /*Para agregarle sombra
+    box-shadow: 15px 15px 0px greenyellow ;*/
+    /*Para margen interno*/
+    padding: 5px;
+    border: 5px solid lightgreen;
+}

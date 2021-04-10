@@ -1,0 +1,15 @@
+.body{
+    /*para fondos de color*/
+    /*background: greenyellow;*/
+    /*para fondos de imagen*/
+    background: url(../img/imagen1.jpg);
+    /*para el fondo no se repita hay que usar*/
+    background-repeat: no-repeat;/*para que repita en vertical es repeat y y para horizontal es x*/
+    color: white;
+}
+
+/*sele puede agregar fondo a las cajas*/
+div{
+    background: url(../img/imagen1.jpg);
+    height: 400px;
+}

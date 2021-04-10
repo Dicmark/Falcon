@@ -1,0 +1,74 @@
+*{  /*Con esto elminamos todos los margenes que agregue el navegador*/
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: lightgrey;
+}
+
+header, main, footer{
+    width: 90%;
+    max-width: 1000px;
+    margin:20px auto;/*para centrar el contenido*/
+}
+/*Tabajamos con el nav dentro del header*/
+header nav{
+    background: lightseagreen;
+    overflow: hidden;/*Nos permite limpiar el contenedor para que no se sobrepase de los limites de su otro contenedor*/
+}
+
+/*MENU*/
+/*Trabajamo con los ul dentro de los nav*/
+header nav ul{
+    list-style: none;
+}
+/*Trabajamo con los li dentro de los ul*/
+header nav ul li{
+    float: left;/*para que los link se alineen uno al lado del otro*/
+}
+/*Trabajamo con los a dentro de los li*/
+header nav ul li a{
+    padding: 10px 20px;
+    display: block; /*Esto sirve para que el padding de 10 px tenga efecto*/
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    background: white;
+    color: lightseagreen;
+    text-decoration: none;
+}
+
+/*MAIN*/
+main .articles{
+    text-align: justify;
+    width: 68%;
+    margin-right: 2%;
+    float: left;/*Con esto hacemos que el contenedor se vaya hacia la izq y provoque que suba el sidebar*/
+}
+/*Le agregamso un margen interno y un margen inferior a cada articulo*/
+main .articles article{
+    padding: 20px;
+    background: white;
+    margin-bottom: 25px;
+}
+
+aside{
+    width: 30%;
+    background: limegreen;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;/*Con esto limitamos que el padding este dentro de los limites de la caja o sea del width*/
+
+}
+
+/*FOOTER*/
+footer{
+    background: black;
+    color: white;
+    clear: both;/*Lo que hace es limpiar los float left y desplaza el footer hacia su posición*/
+    padding: 10px 0px;
+    text-align: center;
+}

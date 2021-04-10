@@ -1,0 +1,33 @@
+div{
+    width: 100px;
+    height: 100px;
+    background: orangered;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    float: left;/*La propiedad float puede ser a la izq o derecha y lo que nos permite es flotar los contenedores*/
+}
+
+.caja{
+    /*Nos permite posicionar una caja y moverla dentro del espacio. Para ello utilizamos las propiedades
+    position: relative;
+    top:0px;
+    bottom: ;
+    left:100px ;
+    right: ;
+    */
+    /*position: absolute; No toma en cuenta los limites del contenedor en este caso el div y se maneja directamente con el body
+    position: absolute;
+    top:0px;
+    bottom: ;
+    left:100px ;
+    right: ;
+    */
+    /*position: fixed; Se utiliza para dejar fijada una posición de un elemento mas alla del scroll
+    top:50px;
+    bottom: ;
+    left: 200px ;
+    right: ;
+    */
+
+}

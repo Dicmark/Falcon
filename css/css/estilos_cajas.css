@@ -1,0 +1,13 @@
+/*El div es un contenedor o caja sobre la cual se trabaja el diseño de cajas*/
+div{
+    width: 200px;
+    background: lightblue;
+    /*para margenes externos*/
+    margin: 20px 50px;
+    /*para margen interior*/
+    padding: 30px;
+    /*para el borde*/
+    border: 10px solid green;
+    /*Para que 2 cajas se muestren en linea*/
+    display: inline-block;
+}

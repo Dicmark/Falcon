@@ -1,0 +1,18 @@
+/*Selectores de etiquetas*/
+/*Selectores comunes, se aplican directamente sobre la etiqueta seleccionada*/
+h1,h2,h4,h6{
+    color: crimson;
+}
+
+/*Selectores descendentes, se utilizan para afectar a etiquetas que estan dentro de otras*/
+
+p a{
+    color: green;
+    font-size: 40px;
+}
+
+a[href="http://www.google.com"]{
+    color: orangered;
+    font-size: 20px;
+}
+

@@ -1,0 +1,26 @@
+/*Propiedades de texto*/
+p{
+    /*Para color del texto*/
+    color: cornflowerblue;
+    /*Para la tipografia para nombre compuestos de nombres hay que usar comillas ""*/
+    font-family: Verdana;
+    /*Para el tamaño*/
+    font-size: 2em;
+    /*Para el ancho*/
+    font-weight: bold;
+    /*Para alinear*/
+    text-align: justify;
+    /*Interlineado*/
+    line-height: 30px;
+    /*Decodaro de texto*/
+    text-decoration: underline;
+    /*Tranformación de texto*/
+    text-transform: lowercase;
+    /*Espaciado entre letras*/
+    letter-spacing: 10px;
+    /*Espaciado dps de cada palabra*/
+    word-spacing: 20px;
+    /*Sombra*/
+    text-shadow: 5px 5px 5px red;
+
+}

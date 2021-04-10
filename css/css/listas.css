@@ -1,0 +1,38 @@
+/*Propiedades listas
+ul{
+    Reemplaza los marcadores por circulos
+    list-style-type: circle;
+    Posisiones de las listas le da un espaciado
+    list-style-position: inside;
+}
+
+ol{
+    Le agrega adelante de los numeros un 0 para los que son de 1 solo digito
+    list-style-type: decimal-leading-zero;
+    para que reemplaze los numeros por letras
+    list-style-type: lower-latin;
+}*/
+
+.menu{
+    width: 100%;
+    background: black;
+    /*para eliminar los marcadores*/
+    list-style: none;
+    /*Para eliminar el espacio por defecto de las listas*/
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    /*para poner uno al lado de otro*/
+    display: inline-block;
+}
+.menu li a{
+    /*para hacer que el boton crezca*/
+    padding: 10px 20px;
+    display: inline-block;
+    color: white
+}
+.menu li a:hover{
+    background: lightyellow;
+    color:black;
+}
