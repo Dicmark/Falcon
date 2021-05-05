@@ -76,3 +76,114 @@ header #subheader nav ul li a:hover{
     background: #1798af;
     text-decoration: none;
 }
+/*----------------------------*/
+
+/*MAIN*/
+main{
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    float: left;
+}
+/*---------------------------*/
+
+/*SLIDESHOW*/
+#slideshow{
+    width: 920px;/*esto es debido a que el borde es de 20px en todo el borde mas los 920 hace en total 960px*/
+    height: 260px;
+    float: left;
+    background: black;
+    border: solid 20px white;
+    margin-bottom: 10px;
+}
+/*---------------------------*/
+
+/*BIENVENIDOS*/
+#welcome{
+    width: 920px;/*lo mismo que en el slideshow*/
+    float: left;
+    padding: 20px;
+    background: #187a34; /* Old browsers */
+    background: -moz-linear-gradient(top, #187a34 0%, #59a58b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #187a34 0%,#59a58b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #187a34 0%,#59a58b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#187a34', endColorstr='#59a58b',GradientType=0 ); /* IE6-9 */
+    margin: 20px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px black;
+}
+#welcome article h2{
+    font-family: quatro;
+    color: whitesmoke;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+#welcome article {
+    color: white;
+    line-height: 27px;/*maneja el espacio entre una linea y la siguiente*/
+}
+/*--------------------------*/
+
+/*CONTENIDO*/
+#contenido{
+    width: 700px;
+    float: left;
+}
+#contenido article{
+    float: left;
+    margin-bottom: 20px;
+}
+#contenido article .titulo{
+    font-size: 22px;
+    font-family: quatro;
+    color: whitesmoke;
+}
+#contenido article .fecha{
+    font-size: 14px;
+    color: #1798af;
+    margin-bottom: 5px;
+}
+#contenido article .thumb{
+    width: 220px;
+    float: left;/*con este float left lo que hacemos es que el texto se coloque a la derecha de la imagen*/
+    margin: 0px 10px 10px 0px;
+}
+#contenido article p{
+    color: #8c8c8c;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 20px;
+}
+/*---------------------------*/
+
+/*SIDEBAR*/
+aside{
+    width: 220px;/* se suman a los 700 de contenido*/
+    float: left;
+    margin-left: 20px;
+    background: #4d78b3;
+    padding: 10px 10px 0px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px black;
+}
+aside .widget{
+    margin-bottom: 10px;
+    float: left;
+}
+aside .widget h3{
+    background: whitesmoke;
+    color: #4d78b3;
+    width: 220px;
+    padding: 10px 0px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+aside .widget img{
+    width: 220px;
+}
+aside .widget a{
+    color: white;
+}
+aside .widget ul li{
+    margin-bottom: 5px;
+}
