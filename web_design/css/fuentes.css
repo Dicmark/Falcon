@@ -1,0 +1,9 @@
+ @font-face{
+     font-family:quatro;/*definimos como vamos a llamar a este estilo de letra*/
+     src: url(../fuentes/quatro/Quattrocento-Regular.ttf);/*colocamos la ubicación de la misma*/
+ }
+
+ @font-face{
+    font-family:source-ligth;/*definimos como vamos a llamar a este estilo de letra*/
+    src: url(../fuentes/source/SourceSansPro-Light.ttf);/*colocamos la ubicación de la misma*/
+}
