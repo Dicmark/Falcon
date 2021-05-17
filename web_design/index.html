@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    
     <title>Back To The Future</title>
 </head>
 <body>
@@ -25,7 +26,12 @@
     <section id="wrap">
         <main>
             <section id="slideshow">
-
+                <!-- declaramos un contenedor para las imagenes del stlide el cual se debe llamar asi por que asi esta hecho el script -->
+                <div id="slides">
+                    <img src="/imagenes/slideshow/img3.png">
+                    <!-- <img src="/imagenes/slideshow/img4.png">
+                    <img src="/imagenes/slideshow/img5.png"> -->
+                </div>
             </section>
             <section id="welcome">
                 <article>
@@ -88,5 +94,16 @@
             <p>Todos los derechos reservados a Piyadevs</p>
         </div>
     </section>
+    <!-- /*Enlazamos la pagina de donde bajamos el script*/ -->
+    <script src="htt://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- Enlazamos donde esta el script en la carpeta -->
+    <script src="js/jquery.slides.min.js"></script>
+    <!-- De esta forma incializamos el slider -->
+    <script> 
+            $(function(){/*Con esto indicamos que en este id se van a contener los slides*/
+                $("#slideshow").slidesjs({
+                });
+            }); 
+    </script>
 </body>
 </html>
