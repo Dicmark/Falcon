@@ -1,0 +1,18 @@
+div {
+    width: 200px;
+    height: 200px;
+    background: red;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid green;
+}
+
+.azul {
+    background: lightskyblue;
+    border: 1px solid orange;
+}
+
+.rojo {
+    background: black;
+    border: 1px solid brown;
+}
