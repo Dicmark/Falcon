@@ -10,15 +10,15 @@
 
 	// Funciones
 	var agregarTarea = function(){
-		var tarea = tareaInput.value,
-			nuevaTarea = document.createElement("li"),
-			enlace = document.createElement("a"),
-			contenido = document.createTextNode(tarea);
+		var tarea = tareaInput.value,//De esta forma acceso al valor que se ingresa en el campo Agregar tarea
+			nuevaTarea = document.createElement("li"),//Creamos un elemento li ya que es el que tenemos que agregar a la lista de tareas
+			enlace = document.createElement("a"),//Como cada tarea esta compuesta de un enlace entonces crear un elemento tipo a
+			contenido = document.createTextNode(tarea);//Creamos un nodo de texto que esta almacenado en la variable contenido, la cual contiene el valor de la variable tarea que es lo que ingresamos en el input para cargar una neuva tarea
 
 		if (tarea === "") {
-			tareaInput.setAttribute("placeholder", "Agrega una tarea valida");
-			tareaInput.className = "error";
-			return false;
+			tareaInput.setAttribute("placeholder", "Agrega una tarea valida");//Con esto lo que hacemos es que si la variable tarea esta vacia, modificampos el placeholder por el nuevo mensaje
+			tareaInput.className = "error";//Con esto agregamos la clase del input por la clase error 
+			return false;//De esta forma nos salimos por completo de la funcion agregaTarea
 		}
 
 		// Agregamos el contenido al enlace
@@ -30,20 +30,24 @@
 		// Agregamos la nueva tarea a la lista
 		lista.appendChild(nuevaTarea);
 
-		tareaInput.value = "";
+		tareaInput.value = "";//Con esta linea lo que logramos es que luego de agregar una tarea el campo donde se agregan las tareas se limpie automaticamente
 
+		//Con este for agregamos la opción de remover de lista una tarea para cada una de las tareas que se crean
 		for (var i = 0; i <= lista.children.length -1; i++) {
 			lista.children[i].addEventListener("click", function(){
-				this.parentNode.removeChild(this);
+				this.parentNode.removeChild(this);//El this identifica cual de los elementos de la lista fue seleccionado y lo elimina
 			});
 		}
 
 	};
+
+	//Esta funcion lo que hace eliminar la clase error del input y devolverle el valor original al place holder
 	var comprobarInput = function(){
 		tareaInput.className = "";
 		teareaInput.setAttribute("placeholder", "Agrega tu tarea");
 	};
 
+	//Esta función lo que hace es eliminar la tarea de la lista que fue clickeada
 	var eleminarTarea = function(){
 		this.parentNode.removeChild(this);
 	};
