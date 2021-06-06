@@ -1,0 +1,61 @@
+ /*Reseteamos todo*/
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+ }
+
+ body {
+     background: url(/img/img1.png);
+     background-size: cover;
+     color:aqua;
+     font-size: 16px;
+ }
+
+ .wrap {
+     width: 90%;
+     max-width: 1000px;
+     margin: auto;
+ }
+
+.widget {
+    width: 50%;
+    margin: 2em;
+}
+
+/*Para alinearlos uno al lado del otro hacemos lo siguiente como son todos parrafos*/
+.widget p{
+    display: inline-block;
+    line-height: 1em;
+}
+
+.fecha {
+    font-family: Oswals, Arial;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.3125rem;
+    background: rgba(0, 0, 0, .5);/*Fonde del texto*/
+    padding: 20px;
+    width: 100%;
+}
+
+.reloj {
+    font-family: Oswals, Arial;
+    text-align: center;
+    font-size: 4em;
+    background: rgba(0, 0, 0, .5);/*Fonde del texto*/
+    padding: 20px;
+    width: 100%;
+}
+
+/*Como la caja segundos es un div ocupa el 100% entonces para poderla subir lo que hacemos es decirle que se comporte como display inline in block*/
+
+.reloj .cajaSegundos { 
+    display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm {
+    font-size: 2rem;
+    display: block; 
+}
